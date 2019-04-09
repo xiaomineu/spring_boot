@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("/admin")//通过配置使下面的映射都在/admin下;
 public class loginContro {
 
     @Autowired

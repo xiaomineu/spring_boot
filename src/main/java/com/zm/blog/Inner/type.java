@@ -2,6 +2,7 @@ package com.zm.blog.Inner;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class type {
     @Id
     @GeneratedValue
     private Long id;
+    @NotBlank(message="不能为空")
     private String name;
 
     @OneToMany(mappedBy = "_type")
